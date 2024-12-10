@@ -1,36 +1,64 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Vehicle Models Application
+
+## Overview
+
+The **Vehicle Models Application** is a web application that allows users to browse vehicle models based on a selected make and year. The app is built using Next.js for server-side rendering and static site generation, ensuring a fast and responsive user experience.
+
+### Features
+
+- **Dynamic Routing**: Users can navigate to specific routes for vehicle makes and years.
+- **Asynchronous Data Fetching**: Fetches vehicle makes and models from external APIs.
+- **Responsive Design**: Optimized for both desktop and mobile devices.
+- **Modern UI**: Features a gradient background and user-friendly components.
+
+### Architecture
+
+- **Framework**: [Next.js](https://nextjs.org/) for server-side rendering and static site generation.
+- **API Services**: Includes organized services in the `services/` directory to handle data fetching for makes and vehicles.
+- **Reusable Components**: All reusable UI components, such as `VehicleModelsList`, are located in the `components/` folder.
+- **Constants**: Centralized constants for better maintainability are stored in the `constants/` folder.
+- **Hooks**: Custom hooks for handling logic and state management are defined in the `hooks/` folder.
+- **Utilities**: Helper functions for repetitive tasks, such as generating years, are located in the `utils/` folder.
+- **Global Styles**: Defined in the `globals.css` file inside the `app/` folder for a consistent UI across the app.
+
+---
 
 ## Getting Started
 
-First, run the development server:
+Follow these steps to set up and run the application:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### Prerequisites
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Node.js v16+ installed on your system.
+- A package manager like `npm` or `yarn`.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Installation
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. Clone the repository:
 
-## Learn More
+   ```bash
+   git clone https://github.com/Valeria2707/car-dealer-app.git
+   cd vehicle-models-app
 
-To learn more about Next.js, take a look at the following resources:
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+2. Install dependencies:
+   npm install
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+   # or
 
-## Deploy on Vercel
+   yarn install
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+3. To start the development server:
+   npm run start
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+   # or
+
+   yarn start
+
+4. To create a production build:
+   npm run build
+
+   # or
+
+   yarn build
